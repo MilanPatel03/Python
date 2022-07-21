@@ -1,0 +1,3 @@
+use mysql;
+update mysql.user set password = password('sqlpass') where user = 'root';
+flush privileges;
